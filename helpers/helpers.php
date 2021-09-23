@@ -16,7 +16,7 @@ if (!function_exists('getVersionHelperMobileByBear')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 14:08
      */
-    function getVersionHelperMobileByBear()
+    function getVersionHelperMobileByBear(): string
     {
         $helper = new nguyenanhung\Libraries\Mobile\AppleLink();
 
@@ -32,7 +32,7 @@ if (!function_exists('getInfoPropertiesHelperMobileByBear')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 19:26
      */
-    function getInfoPropertiesHelperMobileByBear()
+    function getInfoPropertiesHelperMobileByBear(): array
     {
         $helper = new nguyenanhung\Libraries\Mobile\AppleLink();
 
@@ -53,7 +53,7 @@ if (!function_exists('appleMailLink')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 33:41
      */
-    function appleMailLink($mailto = '', $cc = '', $subject = '', $body = '')
+    function appleMailLink(string $mailto = '', string $cc = '', string $subject = '', string $body = ''): string
     {
         return nguyenanhung\Libraries\Mobile\AppleLink::mailLink($mailto, $cc, $subject, $body);
     }
@@ -69,7 +69,7 @@ if (!function_exists('applePhoneLink')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 35:46
      */
-    function applePhoneLink($phone = '')
+    function applePhoneLink(string $phone = ''): string
     {
         return nguyenanhung\Libraries\Mobile\AppleLink::phoneLink($phone);
     }
@@ -85,7 +85,7 @@ if (!function_exists('appleFaceTimeVideoLink')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 36:23
      */
-    function appleFaceTimeVideoLink($appleId = '')
+    function appleFaceTimeVideoLink(string $appleId = ''): string
     {
         return nguyenanhung\Libraries\Mobile\AppleLink::FaceTimeVideoLink($appleId);
     }
@@ -101,7 +101,7 @@ if (!function_exists('appleFaceTimeAudioLink')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 36:44
      */
-    function appleFaceTimeAudioLink($appleId = '')
+    function appleFaceTimeAudioLink(string $appleId = ''): string
     {
         return nguyenanhung\Libraries\Mobile\AppleLink::FaceTimeAudioLink($appleId);
     }
@@ -118,7 +118,7 @@ if (!function_exists('appleSmsLink')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 37:30
      */
-    function appleSmsLink($phone = '', $body = '')
+    function appleSmsLink(string $phone = '', string $body = ''): string
     {
         return nguyenanhung\Libraries\Mobile\AppleLink::smsLink($phone, $body);
     }
@@ -135,7 +135,7 @@ if (!function_exists('detectDeviceLinkName')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 40:51
      */
-    function detectDeviceLinkName($data = array(), $redirect = false)
+    function detectDeviceLinkName(array $data = array(), bool $redirect = false): string
     {
         $device = new nguyenanhung\Libraries\Mobile\DeviceDetectLink();
         $device->setData($data)->detectDevice();
@@ -158,7 +158,7 @@ if (!function_exists('detectDeviceLinkSystem')) {
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 41:17
      */
-    function detectDeviceLinkSystem($data = array(), $redirect = false)
+    function detectDeviceLinkSystem(array $data = array(), bool $redirect = false): string
     {
         $device = new nguyenanhung\Libraries\Mobile\DeviceDetectLink();
         $device->setData($data)->detectSystem();

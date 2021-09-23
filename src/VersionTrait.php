@@ -27,7 +27,7 @@ trait VersionTrait
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 08/18/2021 36:23
      */
-    public function getVersion()
+    public function getVersion(): string
     {
         return self::VERSION;
     }
@@ -40,7 +40,7 @@ trait VersionTrait
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 09/20/2021 17:09
      */
-    public function getHelperProperties()
+    public function getHelperProperties(): array
     {
         return array(
             'name'         => self::PROJECT_NAME,
