@@ -18,7 +18,7 @@ if (!function_exists('getVersionHelperMobileByBear')) {
      */
     function getVersionHelperMobileByBear()
     {
-        $helper = new nguyenanhung\Classes\Helper\Mobile\AppleLink();
+        $helper = new nguyenanhung\Libraries\Mobile\AppleLink();
 
         return $helper->getVersion();
     }
@@ -34,7 +34,7 @@ if (!function_exists('getInfoPropertiesHelperMobileByBear')) {
      */
     function getInfoPropertiesHelperMobileByBear()
     {
-        $helper = new nguyenanhung\Classes\Helper\Mobile\AppleLink();
+        $helper = new nguyenanhung\Libraries\Mobile\AppleLink();
 
         return $helper->getHelperProperties();
     }
@@ -55,7 +55,7 @@ if (!function_exists('appleMailLink')) {
      */
     function appleMailLink($mailto = '', $cc = '', $subject = '', $body = '')
     {
-        return nguyenanhung\Classes\Helper\Mobile\AppleLink::mailLink($mailto, $cc, $subject, $body);
+        return nguyenanhung\Libraries\Mobile\AppleLink::mailLink($mailto, $cc, $subject, $body);
     }
 }
 if (!function_exists('applePhoneLink')) {
@@ -71,7 +71,7 @@ if (!function_exists('applePhoneLink')) {
      */
     function applePhoneLink($phone = '')
     {
-        return nguyenanhung\Classes\Helper\Mobile\AppleLink::phoneLink($phone);
+        return nguyenanhung\Libraries\Mobile\AppleLink::phoneLink($phone);
     }
 }
 if (!function_exists('appleFaceTimeVideoLink')) {
@@ -87,7 +87,7 @@ if (!function_exists('appleFaceTimeVideoLink')) {
      */
     function appleFaceTimeVideoLink($appleId = '')
     {
-        return nguyenanhung\Classes\Helper\Mobile\AppleLink::FaceTimeVideoLink($appleId);
+        return nguyenanhung\Libraries\Mobile\AppleLink::FaceTimeVideoLink($appleId);
     }
 }
 if (!function_exists('appleFaceTimeAudioLink')) {
@@ -103,7 +103,7 @@ if (!function_exists('appleFaceTimeAudioLink')) {
      */
     function appleFaceTimeAudioLink($appleId = '')
     {
-        return nguyenanhung\Classes\Helper\Mobile\AppleLink::FaceTimeAudioLink($appleId);
+        return nguyenanhung\Libraries\Mobile\AppleLink::FaceTimeAudioLink($appleId);
     }
 }
 if (!function_exists('appleSmsLink')) {
@@ -120,7 +120,7 @@ if (!function_exists('appleSmsLink')) {
      */
     function appleSmsLink($phone = '', $body = '')
     {
-        return nguyenanhung\Classes\Helper\Mobile\AppleLink::smsLink($phone, $body);
+        return nguyenanhung\Libraries\Mobile\AppleLink::smsLink($phone, $body);
     }
 }
 if (!function_exists('detectDeviceLinkName')) {
@@ -137,7 +137,7 @@ if (!function_exists('detectDeviceLinkName')) {
      */
     function detectDeviceLinkName($data = array(), $redirect = false)
     {
-        $device = new nguyenanhung\Classes\Helper\Mobile\DeviceDetectLink();
+        $device = new nguyenanhung\Libraries\Mobile\DeviceDetectLink();
         $device->setData($data)->detectDevice();
         if ($redirect === true) {
             $device->redirect();
@@ -160,7 +160,7 @@ if (!function_exists('detectDeviceLinkSystem')) {
      */
     function detectDeviceLinkSystem($data = array(), $redirect = false)
     {
-        $device = new nguyenanhung\Classes\Helper\Mobile\DeviceDetectLink();
+        $device = new nguyenanhung\Libraries\Mobile\DeviceDetectLink();
         $device->setData($data)->detectSystem();
 
         if ($redirect === true) {
