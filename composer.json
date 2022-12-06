@@ -27,7 +27,8 @@
             "nguyenanhung\\Libraries\\Mobile\\": "src/"
         },
         "files": [
-            "helpers/helpers.php"
+            "helpers/helpers.php",
+            "helpers/mobile_detect.php"
         ]
     }
 }
