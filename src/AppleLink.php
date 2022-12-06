@@ -49,16 +49,16 @@ if (!class_exists('nguyenanhung\Libraries\Mobile\AppleLink')) {
             if (!empty($body)) {
                 $data['body'] = $body;
             }
-            $data_link = http_build_query($data);
-            $link      = 'mailto:' . $mailto;
+            $dataLink = http_build_query($data);
+            $link     = 'mailto:' . $mailto;
 
-            return !empty($data) ? $link . '?' . $data_link : $link;
+            return !empty($data) ? $link . '?' . $dataLink : $link;
         }
 
         /**
          * Function phoneLink
          *
-         * @param string $phone_number
+         * @param string $phone
          *
          * @return string
          *
@@ -67,9 +67,9 @@ if (!class_exists('nguyenanhung\Libraries\Mobile\AppleLink')) {
          *
          * @see   https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/PhoneLinks/PhoneLinks.html
          */
-        public static function phoneLink(string $phone_number = ''): string
+        public static function phoneLink(string $phone = ''): string
         {
-            return 'tel:' . $phone_number;
+            return 'tel:' . $phone;
         }
 
         /**
@@ -109,7 +109,7 @@ if (!class_exists('nguyenanhung\Libraries\Mobile\AppleLink')) {
         /**
          * Function smsLink
          *
-         * @param string $phone_number
+         * @param string $phone
          * @param string $body
          *
          * @return string
@@ -119,10 +119,10 @@ if (!class_exists('nguyenanhung\Libraries\Mobile\AppleLink')) {
          *
          * @see   https://developer.apple.com/library/archive/featuredarticles/iPhoneURLScheme_Reference/SMSLinks/SMSLinks.html
          */
-        public static function smsLink(string $phone_number = '', string $body = ''): string
+        public static function smsLink(string $phone = '', string $body = ''): string
         {
             // sms:+1-303-499-7111?body=Interested%20in%20your%20product
-            $link = 'sms:' . $phone_number;
+            $link = 'sms:' . $phone;
             if (!empty($body)) {
                 return $link . '?body=' . $body;
             }
