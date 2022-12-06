@@ -19,8 +19,8 @@ namespace nguyenanhung\Libraries\Mobile;
  */
 interface Environment
 {
-    const VERSION       = '1.0.2';
-    const LAST_MODIFIED = '2021-09-24';
+    const VERSION       = '1.0.3';
+    const LAST_MODIFIED = '2022-12-06';
     const AUTHOR_NAME   = 'Hung Nguyen';
     const AUTHOR_EMAIL  = 'dev@nguyenanhung.com';
     const AUTHOR_URL    = 'https://nguyenanhung.com';
