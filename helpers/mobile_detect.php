@@ -10,7 +10,7 @@
 if (!function_exists('is_mobile')) {
     function is_mobile($userAgent = null, $httpHeaders = null)
     {
-        $detect = new Mobile_Detect();
+        $detect = new \Detection\MobileDetect();
 
         return $detect->isMobile($userAgent, $httpHeaders);
     }
@@ -18,7 +18,7 @@ if (!function_exists('is_mobile')) {
 if (!function_exists('is_tablet')) {
     function is_tablet($userAgent = null, $httpHeaders = null)
     {
-        $detect = new Mobile_Detect();
+        $detect = new \Detection\MobileDetect();
 
         return $detect->isTablet($userAgent, $httpHeaders);
     }
