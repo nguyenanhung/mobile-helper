@@ -19,7 +19,7 @@ namespace nguyenanhung\Libraries\Mobile;
  */
 interface Environment
 {
-    const VERSION       = '1.0.5';
+    const VERSION       = '1.0.6';
     const LAST_MODIFIED = '2022-12-13';
     const AUTHOR_NAME   = 'Hung Nguyen';
     const AUTHOR_EMAIL  = 'dev@nguyenanhung.com';
