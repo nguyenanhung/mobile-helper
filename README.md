@@ -1,8 +1,9 @@
-[![Latest Stable Version](https://poser.pugx.org/nguyenanhung/mobile-helper/v/stable)](https://packagist.org/packages/nguyenanhung/mobile-helper)
-[![Total Downloads](https://poser.pugx.org/nguyenanhung/mobile-helper/downloads)](https://packagist.org/packages/nguyenanhung/mobile-helper)
-[![Latest Unstable Version](https://poser.pugx.org/nguyenanhung/mobile-helper/v/unstable)](https://packagist.org/packages/nguyenanhung/mobile-helper)
-[![composer.lock](https://poser.pugx.org/nguyenanhung/mobile-helper/composerlock)](https://packagist.org/packages/nguyenanhung/mobile-helper)
-[![License](https://poser.pugx.org/nguyenanhung/mobile-helper/license)](https://packagist.org/packages/nguyenanhung/mobile-helper)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nguyenanhung/mobile-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/mobile-helper)
+[![Total Downloads](https://img.shields.io/packagist/dt/nguyenanhung/mobile-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/mobile-helper)
+[![Daily Downloads](https://img.shields.io/packagist/dd/nguyenanhung/mobile-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/mobile-helper)
+[![Monthly Downloads](https://img.shields.io/packagist/dm/nguyenanhung/mobile-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/mobile-helper)
+[![License](https://img.shields.io/packagist/l/nguyenanhung/mobile-helper.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/mobile-helper)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/nguyenanhung/mobile-helper/php)](https://packagist.org/packages/nguyenanhung/mobile-helper)
 
 # Basic Helper for Mobile Device
 
